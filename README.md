@@ -103,3 +103,53 @@ python3 main.py
 ### Get your report
 ```bash
 ls reports/
+
+---
+
+## Demo
+
+### Scan DVWA Lab (practice)
+```bash
+python3 main.py
+```
+
+### Scan Any Website
+```bash
+python3 scan.py http://target-website.com
+```
+
+---
+
+## Screenshots
+
+### Terminal Output
+[!!!] SQLi FOUND at http://localhost/vulnerabilities/sqli/
+Parameter: id
+Payload  : '
+Evidence : you have an error in your sql syntax
+CVSS     : 9.8 (CRITICAL)
+[!!!] XSS FOUND at http://localhost/vulnerabilities/csp/
+Payload  : <script>alert('XSS')</script>
+CVSS     : 7.4 (HIGH)
+
+---
+
+## Important Note
+
+This tool is built for:
+- Practicing on intentionally vulnerable apps like DVWA
+- Authorized penetration testing engagements only
+- Educational and learning purposes
+
+Never use this tool against systems without explicit written permission.
+
+---
+
+## Roadmap
+
+- [ ] Command Injection detection
+- [ ] CSRF detection
+- [ ] Blind SQL Injection detection
+- [ ] HTML report option
+- [ ] Multi-threading for faster scans
+- [ ] Login support for authenticated scans on any target
