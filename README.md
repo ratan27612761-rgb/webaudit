@@ -153,3 +153,21 @@ Never use this tool against systems without explicit written permission.
 - [ ] HTML report option
 - [ ] Multi-threading for faster scans
 - [ ] Login support for authenticated scans on any target
+
+---
+
+## Updating WebAudit
+
+To get the latest version with new features and bug fixes:
+
+```bash
+cd webaudit
+git pull origin main
+```
+
+## Version History
+
+| Version | Changes |
+|---|---|
+| v1.0.0 | Initial release - Crawler, SQLi, XSS, CVSS, AI, PDF |
+
